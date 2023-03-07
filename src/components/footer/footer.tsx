@@ -9,7 +9,7 @@ const Footer = () => {
           <a href="mailto:illner.daniel@gmail.com" class="mr-9 text-neutral-800 dark:text-neutral-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              class="h-6 w-6"
               fill="currentColor"
               viewBox="0 0 24 24">
               <path
@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/illner__/" class="mr-9 text-neutral-800 dark:text-neutral-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
+              class="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 24 24">
               <path
@@ -31,7 +31,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/daniel-illner/" class="mr-9 text-neutral-800 dark:text-neutral-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
+              class="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 24 24">
               <path
@@ -41,7 +41,7 @@ const Footer = () => {
           <a href="https://github.com/dxlnr" class="text-neutral-800 dark:text-neutral-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
+              class="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 24 24">
               <path
