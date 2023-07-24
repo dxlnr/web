@@ -1,12 +1,15 @@
 import * as React from "react"
-import Image from "next/image"
+import { DetailedHTMLProps, ImgHTMLAttributes } from 'react';
+import Image, { ImageProps } from "next/image"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
 import { cn } from "@/lib/utils"
 import { Callout } from "@/components/callout"
 import { MdxCard } from "@/components/mdx-card"
 
-const components = {
+type ImageComponent = (props: ImageProps) => JSX.Element;
+
+const components: any = {
   h1: ({ className, ...props }) => (
     <h1
       className={cn(
@@ -94,8 +97,8 @@ const components = {
   img: ({
     className,
     alt,
-    ...props
-  }: React.ImgHTMLAttributes<HTMLImageElement>) => (
+    ...props 
+  }: DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>) => (
     // eslint-disable-next-line @next/next/no-img-element
     <img className={cn("rounded-md border", className)} alt={alt} {...props} />
   ),

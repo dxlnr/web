@@ -6,7 +6,7 @@ import { compareDesc } from "date-fns"
 import { formatDate } from "@/lib/utils"
 
 export const metadata = {
-  title: "Blog",
+  title: "blog",
 }
 
 export default async function BlogPage() {
@@ -24,7 +24,7 @@ export default async function BlogPage() {
             Blog
           </h1>
           <p className="text-xl text-muted-foreground">
-            A blog built using Contentlayer. Posts are written in MDX.
+            Random Thoughts.
           </p>
         </div>
       </div>
