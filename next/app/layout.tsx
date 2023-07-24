@@ -1,38 +1,29 @@
-import Link from "next/link"
-
-import { marketingConfig } from "@/config/marketing"
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
+import "@/styles/globals.css"
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import { MainNav } from "@/components/main-nav"
-import { SiteFooter } from "@/components/site-footer"
+import { navConfig } from "@/config/nav"
 
-interface MarketingLayoutProps {
-  children: React.ReactNode
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: '',
+  description: '',
 }
 
-export default async function MarketingLayout({
+export default function RootLayout({
   children,
-}: MarketingLayoutProps) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="container z-40 bg-background">
         <div className="flex h-20 items-center justify-between py-6">
-          <MainNav items={marketingConfig.mainNav} />
-          <nav>
-            <Link
-              href="/login"
-              className={cn(
-                buttonVariants({ variant: "secondary", size: "sm" }),
-                "px-4"
-              )}
-            >
-              Login
-            </Link>
-          </nav>
+          <MainNav items={navConfig.mainNav} />
         </div>
       </header>
       <main className="flex-1">{children}</main>
-      <SiteFooter />
     </div>
   )
 }

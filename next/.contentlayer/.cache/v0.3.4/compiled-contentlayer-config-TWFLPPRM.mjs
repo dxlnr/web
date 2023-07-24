@@ -1,43 +1,42 @@
-import { defineDocumentType, makeSource } from "contentlayer/source-files"
-import rehypeAutolinkHeadings from "rehype-autolink-headings"
-import rehypePrettyCode from "rehype-pretty-code"
-import rehypeSlug from "rehype-slug"
-import remarkGfm from "remark-gfm"
-
-const computedFields = {
+// contentlayer.config.js
+import { defineDocumentType, makeSource } from "contentlayer/source-files";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
+import remarkGfm from "remark-gfm";
+var computedFields = {
   slug: {
     type: "string",
-    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    resolve: (doc) => `/${doc._raw.flattenedPath}`
   },
   slugAsParams: {
     type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
-  },
-}
-
-export const Post = defineDocumentType(() => ({
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/")
+  }
+};
+var Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `blog/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
+      type: "string"
     },
     date: {
       type: "date",
-      required: true,
+      required: true
     },
     published: {
       type: "boolean",
-      default: true,
+      default: true
     },
     image: {
       type: "string",
-      required: true,
+      required: true
     },
     authors: {
       // Reference types are not embedded.
@@ -46,53 +45,50 @@ export const Post = defineDocumentType(() => ({
       // of: Author,
       type: "list",
       of: { type: "string" },
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
-}))
-
-export const Author = defineDocumentType(() => ({
+  computedFields
+}));
+var Author = defineDocumentType(() => ({
   name: "Author",
   filePathPattern: `authors/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
+      type: "string"
     },
     avatar: {
       type: "string",
-      required: true,
+      required: true
     },
     twitter: {
       type: "string",
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
-}))
-
-export const Page = defineDocumentType(() => ({
+  computedFields
+}));
+var Page = defineDocumentType(() => ({
   name: "Page",
   filePathPattern: `pages/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
-    },
+      type: "string"
+    }
   },
-  computedFields,
-}))
-
-export default makeSource({
+  computedFields
+}));
+var contentlayer_config_default = makeSource({
   contentDirPath: "./content",
   documentTypes: [Page, Post, Author],
   mdx: {
@@ -105,26 +101,33 @@ export default makeSource({
           theme: "github-dark",
           onVisitLine(node) {
             if (node.children.length === 0) {
-              node.children = [{ type: "text", value: " " }]
+              node.children = [{ type: "text", value: " " }];
             }
           },
           onVisitHighlightedLine(node) {
-            node.properties.className.push("line--highlighted")
+            node.properties.className.push("line--highlighted");
           },
           onVisitHighlightedWord(node) {
-            node.properties.className = ["word--highlighted"]
-          },
-        },
+            node.properties.className = ["word--highlighted"];
+          }
+        }
       ],
       [
         rehypeAutolinkHeadings,
         {
           properties: {
             className: ["subheading-anchor"],
-            ariaLabel: "Link to section",
-          },
-        },
-      ],
-    ],
-  },
-})
+            ariaLabel: "Link to section"
+          }
+        }
+      ]
+    ]
+  }
+});
+export {
+  Author,
+  Page,
+  Post,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-TWFLPPRM.mjs.map
