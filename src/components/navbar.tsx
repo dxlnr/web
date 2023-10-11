@@ -80,28 +80,28 @@ const Navbar: Component = () => {
           {isMenu() && (
             <ul class="flex flex-col mt-4 rounded-lg text-right tracking-wider md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
               <li>
-                <a
+                <A
                   href="/"
                   class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
                 >
                   home 
-                </a>
+                </A>
               </li>
               <li>
-                <a
+                <A
                   href="/reads"
                   class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
                 >
                   reads
-                </a>
+                </A>
               </li>
               <li>
-                <a
+                <A
                   href="#"
                   class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
                 >
                   blog
-                </a>
+                </A>
               </li>
             </ul>
           )}
