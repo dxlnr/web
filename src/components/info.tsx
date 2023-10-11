@@ -11,7 +11,7 @@ const Info: Component = () => {
   });
 
   return (
-    <div class={`w-full p-8 sm:p-16 md:p-48 transition duration-4000 ${isFadedIn() ? 'opacity-90' : 'opacity-0'}`}>
+    <div class={`w-full p-8 sm:p-16 md:p-48 transition duration-4000 ${isFadedIn() ? 'opacity-100' : 'opacity-0'}`}>
       <div class="flex items-center border-t border-gray-400"></div>
 
       <div class="container pt-9 mx-auto">

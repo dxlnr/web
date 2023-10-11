@@ -36,7 +36,7 @@ const Navbar: Component = () => {
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="inline-flex items-center p-2 w-12 h-12 opacity-80 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50"
+          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50"
           aria-controls="navbar-solid-bg"
           aria-expanded={isMenu() ? "true" : "false"}
           onClick={toggleButton}
@@ -52,11 +52,11 @@ const Navbar: Component = () => {
           style={`display: ${isMenu() ? "block" : "none"}`}
         >
           {isMenu() && (
-            <ul class="flex flex-col mt-4 rounded-lg text-right tracking-widest md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+            <ul class="flex flex-col mt-4 rounded-lg text-right md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
                 >
                   reads
                 </a>
@@ -64,7 +64,7 @@ const Navbar: Component = () => {
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
                 >
                   blog
                 </a>
