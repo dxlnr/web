@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'syne';
+  src: url('/fonts/Syne/Syne-VariableFont_wght.ttf');
+}

@@ -30,7 +30,7 @@ const Navbar: Component = () => {
   });
 
   return (
-    <nav class="bg-white font-sans text-lg">
+    <nav class="bg-white text-lg">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48 ">
         <a href="#" class="flex items-center"></a>
         <button
@@ -42,9 +42,35 @@ const Navbar: Component = () => {
           onClick={toggleButton}
         >
           <span class="sr-only">Open main menu</span>
-          <svg 
+          <svg
             class=""
-            width="160px" height="160px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Menu_Alt_01"> <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+            width="160px"
+            height="160px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              {" "}
+              <g id="Menu / Menu_Alt_01">
+                {" "}
+                <path
+                  id="Vector"
+                  d="M12 17H19M5 12H19M5 7H19"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>{" "}
+              </g>{" "}
+            </g>
+          </svg>
         </button>
         <div
           id="navbar-solid-bg"
@@ -52,10 +78,18 @@ const Navbar: Component = () => {
           style={`display: ${isMenu() ? "block" : "none"}`}
         >
           {isMenu() && (
-            <ul class="flex flex-col mt-4 rounded-lg text-right md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+            <ul class="flex flex-col mt-4 rounded-lg text-right tracking-wider md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
               <li>
                 <a
-                  href="#"
+                  href="/"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
+                >
+                  home 
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/reads"
                   class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
                 >
                   reads

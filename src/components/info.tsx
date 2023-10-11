@@ -7,18 +7,22 @@ const Info: Component = () => {
   onMount(() => {
     setTimeout(() => {
       setIsFadedIn(true);
-    }, 10); 
+    }, 10);
   });
 
   return (
-    <div class={`w-full p-8 sm:p-16 md:p-48 transition duration-4000 ${isFadedIn() ? 'opacity-100' : 'opacity-0'}`}>
+    <div
+      class={`w-full p-8 sm:p-16 md:p-48 transition duration-3000 ${
+        isFadedIn() ? "opacity-100" : "opacity-0"
+      }`}
+    >
       <div class="flex items-center border-t border-gray-400"></div>
 
       <div class="container pt-9 mx-auto">
         <div class="mb-9 flex justify-center">
           <a
             href="mailto:illner.daniel@gmail.com"
-            class="mr-9 text-neutral-800 dark:text-neutral-200"
+            class="mr-9 text-neutral-800"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +39,7 @@ const Info: Component = () => {
           </a>
           <a
             href="https://www.instagram.com/illner__/"
-            class="mr-9 text-neutral-800 dark:text-neutral-200"
+            class="mr-9 text-neutral-800"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +52,7 @@ const Info: Component = () => {
           </a>
           <a
             href="https://www.linkedin.com/in/daniel-illner/"
-            class="mr-9 text-neutral-800 dark:text-neutral-200"
+            class="mr-9 text-neutral-800"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,10 +63,7 @@ const Info: Component = () => {
               <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
             </svg>
           </a>
-          <a
-            href="https://github.com/dxlnr"
-            class="text-neutral-800 dark:text-neutral-200"
-          >
+          <a href="https://github.com/dxlnr" class="text-neutral-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6 hover:text-blue-800"
