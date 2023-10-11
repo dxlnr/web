@@ -7,7 +7,7 @@ const Reads: Component = () => {
   const [markdownContent, setMarkdownContent] = createSignal("");
   const [tableData, setTableData] = createSignal([]);
 
-  fetch("/src/md/reads.md")
+  fetch("/src/assets/reads.md")
     .then((response) => response.text())
     .then((data) => {
       setMarkdownContent(data);
