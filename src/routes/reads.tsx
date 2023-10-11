@@ -38,7 +38,7 @@ const Reads: Component = () => {
             </thead>
             <tbody class="hover:bg-gray-100">
               {tableData().rows.map((row) => (
-                <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50">
+                <tr class="bg-white border-b hover:bg-gray-50">
                   {row.map((cell, cellIndex) =>
                     cellIndex === row.length - 1 ? (
                       <td>
