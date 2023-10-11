@@ -4,11 +4,7 @@ import { A } from "@solidjs/router";
 import Navbar from "../components/navbar";
 
 const Reads: Component = () => {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <></>;
 };
 
 export default Reads;
