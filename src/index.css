@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'syne';
-  src: url('/fonts/Syne/Syne-VariableFont_wght.ttf');
+  font-family: "syne";
+  src: url("/fonts/Syne/Syne-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "mohave";
+  src: url("/fonts/Mohave/Mohave-VariableFont_wght.ttf");
 }

@@ -7,7 +7,7 @@ const Reads = lazy(() => import("./routes/reads"));
 
 const App: Component = () => {
   return (
-    <div class="body-font font-syne">
+    <div class="body-font font-mohave">
       <Routes>
         <Route path="/" component={Home} />
         <Route path="/blog" component={Blog} />

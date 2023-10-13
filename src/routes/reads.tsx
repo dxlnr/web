@@ -29,27 +29,45 @@ const Reads: Component = () => {
           <table class="w-full text-sm md:text-sm text-center text-gray-700">
             <thead class="uppercase rounded-sm border-y border-gray-500 ">
               <tr>
-                {tableData().headers.map((header) => (
-                  <th scope="col" class="px-6 py-3">
-                    {header}
-                  </th>
-                ))}
+                {tableData()
+                  .headers.slice(0, -1)
+                  .map((header) => (
+                    <th scope="col" class="px-6 py-3">
+                      {header}
+                    </th>
+                  ))}
               </tr>
             </thead>
             <tbody class="hover:bg-gray-100">
               {tableData().rows.map((row) => (
                 <tr class="bg-white border-b hover:bg-gray-50">
-                  {row.map((cell, cellIndex) =>
-                    cellIndex === row.length - 1 ? (
-                      <td>
-                        <a class="p-2 hover:text-blue-800 hover:underline" href={cell}>
-                          {cell}
-                        </a>
-                      </td>
-                    ) : (
-                      <td class="p-2">{cell}</td>
-                    ),
-                  )}
+                  {row.slice(0, -1).map((cell, cellIndex) => {
+                    if (cellIndex === 0) {
+                      return (
+                        <td>
+                          <a
+                            class="p-2 hover:text-blue-800 hover:underline"
+                            href={row[row.length - 1]}
+                          >
+                            {cell}
+                          </a>
+                        </td>
+                      );
+                    } else if (cellIndex === row.length - 1) {
+                      return (
+                        <td>
+                          <a
+                            class="p-2 hover:text-blue-800 hover:underline"
+                            href={cell}
+                          >
+                            {cell}
+                          </a>
+                        </td>
+                      );
+                    } else {
+                      return <td class="p-2">{cell}</td>;
+                    }
+                  })}
                 </tr>
               ))}
             </tbody>
