@@ -8,3 +8,6 @@ Factfulness: Ten Reasons We’re Wrong About the World–and Why Things Are Bett
 Antifragile: Things That Gain from Disorder; N. Taleb; Economics, Philosophy; 2; https://a.co/d/90hMt4l
 Die unerträgliche Leichtigkeit des Seins; M. Kundera; Philosophy; 2; https://amzn.eu/d/hJ5yXbR
 Gödel, Escher, Bach: An Eternal Golden Braid; D. Hofstadter; Science, Mathematics, CS; 1; https://a.co/d/92wfKPW
+Fundamentals: Ten Keys to Reality; F. Wilczek; Physics, Science; 2; https://a.co/d/4x7JUgW
+How We Got From There to Here: A Story of Real Analysis; E. Boman, R. Rogers; Mathematics; 2; https://a.co/d/bLgjH5B
+The Brothers Karamazov; F. Dostoevsky; (Psychological) Fiction; 2; https://a.co/d/cvRfLmW
