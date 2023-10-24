@@ -11,3 +11,4 @@ Gödel, Escher, Bach: An Eternal Golden Braid; D. Hofstadter; Science, Mathemati
 Fundamentals: Ten Keys to Reality; F. Wilczek; Physics, Science; 2; https://a.co/d/4x7JUgW
 How We Got From There to Here: A Story of Real Analysis; E. Boman, R. Rogers; Mathematics; 2; https://a.co/d/bLgjH5B
 The Brothers Karamazov; F. Dostoevsky; (Psychological) Fiction; 2; https://a.co/d/cvRfLmW
+Solaris; S. Lem; Science Fiction; 2; https://a.co/d/78oD0gw
