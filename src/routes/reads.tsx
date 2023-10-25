@@ -2,14 +2,21 @@ import { Component, onCleanup, createSignal } from "solid-js";
 import { A } from "@solidjs/router";
 
 import Navbar from "../components/navbar";
+import ReadsTable from "../components/readsTable";
 
 const Reads: Component = () => {
+  // Handle markdown content
   const [markdownContent, setMarkdownContent] = createSignal("");
+  // Handle data
   const [bookData, setBookData] = createSignal([]);
   const [articleData, setArticleData] = createSignal([]);
-
+  const [essayData, setEssayData] = createSignal([]);
+  const [paperData, setPaperData] = createSignal([]);
+  // Handle appearance
   const [showBooksBody, setShowBooksBody] = createSignal(true);
   const [showArticleBody, setShowArticleBody] = createSignal(true);
+  const [showEssayBody, setShowEssayBody] = createSignal(true);
+  const [showPaperBody, setShowPaperBody] = createSignal(true);
 
   function fetchMarkdown(url: string, setDataCallback: any) {
     fetch(url)
@@ -32,136 +39,41 @@ const Reads: Component = () => {
 
   fetchMarkdown("/reads.md", setBookData);
   fetchMarkdown("/articles.md", setArticleData);
+  fetchMarkdown("/essays.md", setEssayData);
+  fetchMarkdown("/papers.md", setPaperData);
 
   return (
     <div class="">
       <Navbar />
       <div class="flex flex-col relative overflow-x-auto p-4">
-        {bookData().headers && bookData().rows && (
-          <table class="w-full text-sm md:text-sm text-center text-gray-700">
-            <thead class="uppercase rounded-sm border-y border-gray-500 ">
-              <tr onClick={() => setShowBooksBody(!showBooksBody())}>
-                <th
-                  colspan={bookData().headers.length}
-                  className="px-6 py-1 text-left text-sm font-medium border-b border-gray-500 text-gray-800 uppercase tracking-wider hover:bg-gray-50 cursor-pointer"
-                >
-                  books
-                </th>
-              </tr>
-              {showBooksBody() && (
-                <tr>
-                  {bookData()
-                    .headers.slice(0, -1)
-                    .map((header) => (
-                      <th scope="col" class="px-6 py-3">
-                        {header}
-                      </th>
-                    ))}
-                </tr>
-              )}
-            </thead>
-            {showBooksBody() && (
-              <tbody class="hover:bg-gray-100">
-                {bookData().rows.map((row) => (
-                  <tr class="bg-white border-b hover:bg-gray-50">
-                    {row.slice(0, -1).map((cell, cellIndex) => {
-                      if (cellIndex === 0) {
-                        return (
-                          <td>
-                            <a
-                              class="p-2 hover:text-blue-800 hover:underline"
-                              href={row[row.length - 1]}
-                            >
-                              {cell}
-                            </a>
-                          </td>
-                        );
-                      } else if (cellIndex === row.length - 1) {
-                        return (
-                          <td>
-                            <a
-                              class="p-2 hover:text-blue-800 hover:underline"
-                              href={cell}
-                            >
-                              {cell}
-                            </a>
-                          </td>
-                        );
-                      } else {
-                        return <td class="p-2">{cell}</td>;
-                      }
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            )}
-          </table>
-        )}
-
-        {articleData().headers && articleData().rows && (
-          <table class="w-full text-sm md:text-sm text-center text-gray-700">
-            <thead
-              class={`uppercase rounded-sm border-gray-500 ${
-                showBooksBody() ? "border-y " : "border-b"
-              }`}
-            >
-              <tr onClick={() => setShowArticleBody(!showArticleBody())}>
-                <th
-                  colspan={articleData().headers.length}
-                  className="px-6 py-1 text-left text-sm font-medium border-b border-gray-500 text-gray-800 uppercase tracking-wider hover:bg-gray-50 cursor-pointer"
-                >
-                  articles
-                </th>
-              </tr>
-              {showArticleBody() && (
-                <tr>
-                  {articleData()
-                    .headers.slice(0, -1)
-                    .map((header) => (
-                      <th scope="col" class="px-6 py-3">
-                        {header}
-                      </th>
-                    ))}
-                </tr>
-              )}
-            </thead>
-            {showArticleBody() && (
-              <tbody class="hover:bg-gray-100">
-                {articleData().rows.map((row) => (
-                  <tr class="bg-white border-b hover:bg-gray-50">
-                    {row.slice(0, -1).map((cell, cellIndex) => {
-                      if (cellIndex === 0) {
-                        return (
-                          <td>
-                            <a
-                              class="p-2 hover:text-blue-800 hover:underline"
-                              href={row[row.length - 1]}
-                            >
-                              {cell}
-                            </a>
-                          </td>
-                        );
-                      } else if (cellIndex === row.length - 1) {
-                        return (
-                          <td>
-                            <a
-                              class="p-2 hover:text-blue-800 hover:underline"
-                              href={cell}
-                            >
-                              {cell}
-                            </a>
-                          </td>
-                        );
-                      } else {
-                        return <td class="p-2">{cell}</td>;
-                      }
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            )}
-          </table>
-        )}
+        <ReadsTable
+          title="books"
+          data={bookData}
+          showBody={showBooksBody}
+          setShowBody={setShowBooksBody}
+          showPreBody={() => true}
+        />
+        <ReadsTable
+          title="articles"
+          data={articleData}
+          showBody={showArticleBody}
+          setShowBody={setShowArticleBody}
+          showPreBody={showBooksBody}
+        />
+        <ReadsTable
+          title="essays"
+          data={essayData}
+          showBody={showEssayBody}
+          setShowBody={setShowEssayBody}
+          showPreBody={showArticleBody}
+        />
+        <ReadsTable
+          title="papers"
+          data={paperData}
+          showBody={showPaperBody}
+          setShowBody={setShowPaperBody}
+          showPreBody={showEssayBody}
+        />
       </div>
     </div>
   );
