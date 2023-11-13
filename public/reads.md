@@ -1,5 +1,6 @@
 Title; Author; Subject; Rank; Link
 The Vital Question: Energy, Evolution, and the Origins of Complex Life; N. Lane; Biochemistry, Biology; 1; https://a.co/d/3NNmlYn
+Life Ascending: The Ten Great Inventions of Evolution; N. Lane; Biology; 1; https://a.co/d/jdv3RUR
 Sapiens: A Brief History of Humankind; Yuval N. Harari; History; 1; https://a.co/d/iKxGbSV
 Homo Deus: A Brief History of Tomorrow; Yuval N. Harari; History; 1; https://a.co/d/cHXM038
 The Beginning of Infinity: Explanations that Transform the World; D. Deutsch; Science, Physics; 1; https://a.co/d/08cwaZ4
@@ -11,7 +12,7 @@ Gödel, Escher, Bach: An Eternal Golden Braid; D. Hofstadter; Science, Mathemati
 Fundamentals: Ten Keys to Reality; F. Wilczek; Physics, Science; 2; https://a.co/d/4x7JUgW
 How We Got From There to Here: A Story of Real Analysis; E. Boman, R. Rogers; Mathematics; 2; https://a.co/d/bLgjH5B
 The Brothers Karamazov; F. Dostoevsky; (Psychological) Fiction; 2; https://a.co/d/cvRfLmW
-Crime and Punishment: Fyodor Dostoevsky; F. Dostoevsky; (Psychological) Fiction; 2; https://amzn.eu/d/e1CKuS0
+Crime and Punishment; F. Dostoevsky; (Psychological) Fiction; 2; https://amzn.eu/d/e1CKuS0
 Solaris; S. Lem; Science Fiction; 2; https://a.co/d/78oD0gw
 Dune; F.Herbert; Science Fiction; 2; https://a.co/d/9pYqCcv
 Crafting Interpreters; R. Nystrom; Computer Science; 1; https://a.co/d/bC4srSF
