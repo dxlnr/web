@@ -15,4 +15,5 @@ The Brothers Karamazov; F. Dostoevsky; (Psychological) Fiction; 2; https://a.co/
 Crime and Punishment; F. Dostoevsky; (Psychological) Fiction; 2; https://amzn.eu/d/e1CKuS0
 Solaris; S. Lem; Science Fiction; 2; https://a.co/d/78oD0gw
 Dune; F.Herbert; Science Fiction; 2; https://a.co/d/9pYqCcv
-Crafting Interpreters; R. Nystrom; Computer Science; 1; https://a.co/d/bC4srSF
+Crafting Interpreters; R. Nystrom; Computer Science; 2; https://a.co/d/bC4srSF
+Brief History of Time: From the Big Bang to Black Holes; S. Hawking; Physics; 1; https://a.co/d/cruqTed

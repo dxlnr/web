@@ -30,8 +30,8 @@ const Navbar: Component = () => {
   });
 
   return (
-    <nav class="bg-white text-lg">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48 ">
+    <nav class="bg-white text-lg dark:bg-darkMode">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48">
         <a href="#" class="flex items-center"></a>
         <button
           data-collapse-toggle="navbar-solid-bg"
@@ -82,7 +82,7 @@ const Navbar: Component = () => {
               <li>
                 <A
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white"
                 >
                   home
                 </A>
@@ -90,7 +90,7 @@ const Navbar: Component = () => {
               <li>
                 <A
                   href="/reads"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white"
                 >
                   reads
                 </A>
@@ -98,7 +98,7 @@ const Navbar: Component = () => {
               <li>
                 <A
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white"
                 >
                   blog
                 </A>
