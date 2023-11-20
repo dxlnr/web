@@ -31,12 +31,12 @@ const Navbar: Component = () => {
 
   return (
     <nav class="bg-white text-lg dark:bg-darkMode">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48">
-        <a href="#" class="flex items-center"></a>
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48 ">
+        <a href="#" class="flex items-center "></a>
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50"
+          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50 hover:dark:bg-darkModeHover dark:bg-white"
           aria-controls="navbar-solid-bg"
           aria-expanded={isMenu() ? "true" : "false"}
           onClick={toggleButton}
@@ -44,6 +44,7 @@ const Navbar: Component = () => {
           <span class="sr-only">Open main menu</span>
           <svg
             class=""
+            stroke="currentColor"
             width="160px"
             height="160px"
             viewBox="0 0 24 24"
@@ -82,7 +83,7 @@ const Navbar: Component = () => {
               <li>
                 <A
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white dark:hover:bg-darkModeHover"
                 >
                   home
                 </A>
@@ -90,7 +91,7 @@ const Navbar: Component = () => {
               <li>
                 <A
                   href="/reads"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white dark:hover:bg-darkModeHover"
                 >
                   reads
                 </A>
@@ -98,7 +99,7 @@ const Navbar: Component = () => {
               <li>
                 <A
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white"
+                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2 dark:text-white dark:hover:bg-darkModeHover"
                 >
                   blog
                 </A>

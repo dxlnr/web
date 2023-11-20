@@ -13,7 +13,8 @@ module.exports = {
           }]
       },
       colors: {
-        'darkMode': '#202020',
+        // 'darkMode': '#202020',
+        'darkMode': '#000000',
         'darkModeHover': '#323232',
         'darkModeTextHover': '#bafc56',
       },
