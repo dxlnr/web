@@ -8,6 +8,17 @@ const Navbar: Component = () => {
     setMenu(!isMenu());
   };
 
+  const [strokeColor, setStrokeColor] = createSignal(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "#ffffff"
+      : "#000000",
+  );
+  const updateColor = (e) => {
+    setStrokeColor(e.matches ? "#ffffff" : "#000000");
+  };
+  const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  mediaQuery.addListener(updateColor);
+
   onMount(() => {
     if (window.innerWidth < 768) {
       setMenu(false);
@@ -27,6 +38,7 @@ const Navbar: Component = () => {
 
   onCleanup(() => {
     window.removeEventListener("resize", handleResize);
+    mediaQuery.removeListener(updateColor);
   });
 
   return (
@@ -36,13 +48,13 @@ const Navbar: Component = () => {
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50 hover:dark:bg-darkModeHover dark:bg-white"
+          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50 hover:dark:bg-darkModeHover"
           aria-controls="navbar-solid-bg"
           aria-expanded={isMenu() ? "true" : "false"}
           onClick={toggleButton}
         >
           <span class="sr-only">Open main menu</span>
-          <svg class="fill-white" viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
@@ -56,7 +68,7 @@ const Navbar: Component = () => {
                 <path
                   id="Vector"
                   d="M12 17H19M5 12H19M5 7H19"
-                  stroke="#000000"
+                  stroke={strokeColor()}
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
