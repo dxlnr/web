@@ -42,15 +42,7 @@ const Navbar: Component = () => {
           onClick={toggleButton}
         >
           <span class="sr-only">Open main menu</span>
-          <svg
-            class=""
-            stroke="currentColor"
-            width="160px"
-            height="160px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg class="fill-white" viewBox="0 0 24 24">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
               id="SVGRepo_tracerCarrier"

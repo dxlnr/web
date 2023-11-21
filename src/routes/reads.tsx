@@ -13,10 +13,10 @@ const Reads: Component = () => {
   const [essayData, setEssayData] = createSignal([]);
   const [paperData, setPaperData] = createSignal([]);
   // Handle appearance
-  const [showBooksBody, setShowBooksBody] = createSignal(true);
-  const [showArticleBody, setShowArticleBody] = createSignal(true);
-  const [showEssayBody, setShowEssayBody] = createSignal(true);
-  const [showPaperBody, setShowPaperBody] = createSignal(true);
+  const [showBooksBody, setShowBooksBody] = createSignal(false);
+  const [showArticleBody, setShowArticleBody] = createSignal(false);
+  const [showEssayBody, setShowEssayBody] = createSignal(false);
+  const [showPaperBody, setShowPaperBody] = createSignal(false);
 
   function fetchMarkdown(url: string, setDataCallback: any) {
     fetch(url)
