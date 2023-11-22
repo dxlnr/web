@@ -1,4 +1,5 @@
 Title; Author; Subject; Rank; Link
+COMPUTING MACHINERY AND INTELLIGENCE; A. Turing; Computer Science, AI; 1; https://academic.oup.com/mind/article/LIX/236/433/986238
 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model; Schrittwieser et al.; RL, Computer Science; 1; https://arxiv.org/abs/1911.08265
 Algorithmic Theories of Everything; J. Schmidhuber; AI, Computer Science; 1; https://arxiv.org/abs/quant-ph/0011122
 Attention Is All You Need; Vaswani et al.; AI, Computer Science; 1; https://arxiv.org/abs/1706.03762

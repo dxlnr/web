@@ -17,7 +17,7 @@ const Navbar: Component = () => {
     setStrokeColor(e.matches ? "#ffffff" : "#000000");
   };
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-  mediaQuery.addListener(updateColor);
+  mediaQuery.onchange = updateColor;
 
   onMount(() => {
     if (window.innerWidth < 768) {
@@ -38,7 +38,7 @@ const Navbar: Component = () => {
 
   onCleanup(() => {
     window.removeEventListener("resize", handleResize);
-    mediaQuery.removeListener(updateColor);
+    mediaQuery.onchange = null;
   });
 
   return (
