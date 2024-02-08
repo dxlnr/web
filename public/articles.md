@@ -9,4 +9,5 @@ Which GPU(s) to Get for Deep Learning; T. Dettmers; Computing; 2; https://timdet
 Ideas not mattering is a psyop; A. Guzey; Science; 3; https://guzey.com/ideas-not-mattering-is-a-psyop/
 Aligning language models to follow instructions; OpenAI; NLP; 3; https://openai.com/research/instruction-following
 SGEMM; S. Gary; CS; 3; https://github.com/NervanaSystems/maxas/wiki/SGEMM
-Making Deep Learning Go Brrr From First Principles; H. He; CS, DL; https://horace.io/brrr_intro.html
+Making Deep Learning Go Brrr From First Principles; H. He; CS, DL; 3; https://horace.io/brrr_intro.html
+The Moral Equivalent of War; W. James; Social Science; 3; https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_77/October_1910/The_Moral_Equivalent_of_War

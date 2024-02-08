@@ -19,3 +19,4 @@ Crafting Interpreters; R. Nystrom; Computer Science; 2; https://a.co/d/bC4srSF
 Brief History of Time: From the Big Bang to Black Holes; S. Hawking; Physics; 1; https://a.co/d/cruqTed
 Reinforcement Learning: An Introduction; Sutton, Barto; Reinforcement Learning; 1; https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf
 The Player of Games: A Culture Novel; I. Banks; Science Fiction; 3; https://a.co/d/jjuWjUn
+Introduction to Quantum Mechanics; D. Griffiths; Physics; 3; https://a.co/d/h9L7M5t
