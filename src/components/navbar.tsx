@@ -48,7 +48,7 @@ const Navbar: Component = () => {
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm rounded-lg md:hidden hover:bg-gray-50"
+          class="appearance-none inline-flex items-center p-2 w-12 h-12 opacity-100 justify-center text-sm rounded-lg md:hidden hover:bg-gray-50"
           aria-controls="navbar-solid-bg"
           aria-expanded={isMenu() ? "true" : "false"}
           onClick={toggleButton}

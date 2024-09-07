@@ -16,3 +16,10 @@ npm run build
 ## Deployment
 
 Deployment is done via [vercel](https://vercel.com/).
+
+
+## Linting
+
+```bash
+npx prettier --write src/
+```
