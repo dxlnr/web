@@ -26,7 +26,7 @@ const Info: Component = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7 hover:text-blue-800 dark:text-white"
+              class="h-7 w-7 hover:text-blue-800"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -43,7 +43,7 @@ const Info: Component = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 hover:text-blue-800 dark:text-white"
+              class="h-6 w-6 hover:text-blue-800"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -56,7 +56,7 @@ const Info: Component = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 hover:text-blue-800 dark:text-white"
+              class="h-6 w-6 hover:text-blue-800"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -66,7 +66,7 @@ const Info: Component = () => {
           <a href="https://github.com/dxlnr" class="text-neutral-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 hover:text-blue-800 dark:text-white"
+              class="h-6 w-6 hover:text-blue-800"
               fill="currentColor"
               viewBox="0 0 24 24"
             >

@@ -43,9 +43,9 @@ const Reads: Component = () => {
   fetchMarkdown("/papers.md", setPaperData);
 
   return (
-    <div class="dark:bg-darkMode">
+    <div>
       <Navbar />
-      <div class="flex flex-col relative overflow-x-auto p-4 dark:bg-darkMode">
+      <div class="flex flex-col relative overflow-x-auto p-4">
         <ReadsTable
           title="books"
           data={bookData}
