@@ -48,14 +48,13 @@ const Navbar: Component = () => {
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="appearance-none inline-flex items-center p-2 w-12 h-12 opacity-100 justify-center text-sm rounded-lg md:hidden hover:bg-gray-50"
+          class="appearance-none inline-flex items-center p-2 w-12 h-12 opacity-100 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-50"
           aria-controls="navbar-solid-bg"
           aria-expanded={isMenu() ? "true" : "false"}
           onClick={toggleButton}
         >
           <span class="sr-only">Open main menu</span>
           <svg
-            fill="#000000"
             viewBox="0 0 32 32"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
