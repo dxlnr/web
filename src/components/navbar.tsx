@@ -48,13 +48,18 @@ const Navbar: Component = () => {
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50"
+          class="inline-flex items-center p-2 w-12 h-12 opacity-70 justify-center text-sm rounded-lg md:hidden hover:bg-gray-50"
           aria-controls="navbar-solid-bg"
           aria-expanded={isMenu() ? "true" : "false"}
           onClick={toggleButton}
         >
           <span class="sr-only">Open main menu</span>
-          <svg viewBox="0 0 24 24">
+          <svg
+            fill="#000000"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
@@ -63,17 +68,8 @@ const Navbar: Component = () => {
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
-              <g id="Menu / Menu_Alt_01">
-                {" "}
-                <path
-                  id="Vector"
-                  d="M12 17H19M5 12H19M5 7H19"
-                  stroke={strokeColor()}
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>{" "}
-              </g>{" "}
+              <title>bars</title>{" "}
+              <path d="M2 8.749h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM30 15.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0zM30 23.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0z"></path>{" "}
             </g>
           </svg>
         </button>
