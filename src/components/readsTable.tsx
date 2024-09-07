@@ -12,7 +12,7 @@ const ReadsTable: Component<TableProps> = (props) => {
   return (
     <>
       {props.data().headers && props.data().rows && (
-        <table class="w-full text-sm md:text-sm text-center text-gray-700">
+        <table class="w-full text-sm md:text-lg text-center text-gray-700">
           <thead
             class={`uppercase rounded-sm border-gray-500 ${
               props.showPreBody() ? "border-y " : "border-b"
@@ -21,7 +21,7 @@ const ReadsTable: Component<TableProps> = (props) => {
             <tr onClick={() => props.setShowBody(!props.showBody())}>
               <th
                 colspan={props.data().headers.length}
-                className="px-6 py-1 text-left text-sm font-medium border-b border-gray-500 text-gray-800 uppercase tracking-wider hover:bg-gray-50 cursor-pointer"
+                className="px-6 py-1 text-left text-lg font-medium border-b border-gray-500 text-gray-800 uppercase tracking-wider hover:bg-gray-50 cursor-pointer"
               >
                 {props.title}
               </th>

@@ -10,11 +10,11 @@ const Navbar: Component = () => {
 
   const [strokeColor, setStrokeColor] = createSignal(
     window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "#ffffff"
+      ? "#000000"
       : "#000000",
   );
   const updateColor = (e) => {
-    setStrokeColor(e.matches ? "#ffffff" : "#000000");
+    setStrokeColor(e.matches ? "#000000" : "#000000");
   };
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
   mediaQuery.onchange = updateColor;
@@ -42,7 +42,7 @@ const Navbar: Component = () => {
   });
 
   return (
-    <nav class="bg-white text-lg">
+    <nav class="text-lg">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48 ">
         <a href="#" class="flex items-center "></a>
         <button
