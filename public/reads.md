@@ -25,3 +25,6 @@ The Denial of Death; E. Becker; Psychoanalysis, Philosopy; https://a.co/d/28oeWC
 Zero to One: Notes on Startups, or How to Build the Future; P. Thiel; Business; https://a.co/d/9jfoayO
 Being You: A New Science of Consciousness; A. Seth; Neuroscience, Cognition; https://a.co/d/giUaNQa
 The Selfish Gene; R. Dawkins; Biology; https://a.co/d/2jWbOdK
+The Emotional Brain: The Mysterious Underpinnings of Emotional Life; J. LeDoux; Neuroscience; https://a.co/d/0TEVizj
+Skin in the Game: Hidden Asymmetries in Daily Life; N. Taleb; Economics, Philosophy; https://a.co/d/31Vqaga
+One Up On Wall Street: How To Use What You Already Know To Make Money In The Market; P. Lynch; Finance; https://a.co/d/1ND3l0o
