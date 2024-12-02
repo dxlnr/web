@@ -45,7 +45,7 @@ const Navbar: Component = () => {
     <nav class="text-lg">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48 ">
         <a href="#" class="flex items-center "></a>
-          <button
+        <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
           class="flex flex-col justify-between items-center p-2 w-12 h-12 md:hidden"
