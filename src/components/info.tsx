@@ -4,18 +4,8 @@ import { Routes, Route, A } from "@solidjs/router";
 const Info: Component = () => {
   const [isFadedIn, setIsFadedIn] = createSignal(false);
 
-  onMount(() => {
-    setTimeout(() => {
-      setIsFadedIn(true);
-    }, 10);
-  });
-
   return (
-    <div
-      class={`w-full p-8 sm:p-16 md:p-48 transition duration-3000 ${
-        isFadedIn() ? "opacity-100" : "opacity-0"
-      }`}
-    >
+    <div class="w-full p-8 sm:p-16 md:p-48">
       <div class="flex items-center border-t border-gray-400"></div>
 
       <div class="container pt-9 mx-auto">

@@ -10,7 +10,6 @@ const App: Component = () => {
     <div class="body-font font-mohave min-h-screen">
       <Routes>
         <Route path="/" component={Home} />
-        <Route path="/blog" component={Blog} />
         <Route path="/reads" component={Reads} />
       </Routes>
     </div>

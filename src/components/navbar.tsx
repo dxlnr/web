@@ -10,11 +10,11 @@ const Navbar: Component = () => {
 
   const [strokeColor, setStrokeColor] = createSignal(
     window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "#000000"
+      ? "#FFFFFF"
       : "#000000",
   );
   const updateColor = (e) => {
-    setStrokeColor(e.matches ? "#000000" : "#000000");
+    setStrokeColor(e.matches ? "#FFFFFF" : "#000000");
   };
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
   mediaQuery.onchange = updateColor;
@@ -93,14 +93,6 @@ const Navbar: Component = () => {
                   class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
                 >
                   reads
-                </A>
-              </li>
-              <li>
-                <A
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b rounded hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-2"
-                >
-                  blog
                 </A>
               </li>
             </ul>
