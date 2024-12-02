@@ -45,32 +45,30 @@ const Navbar: Component = () => {
     <nav class="text-lg">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-16 md:px-48 ">
         <a href="#" class="flex items-center "></a>
-        <button
+          <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="appearance-none inline-flex items-center p-2 w-12 h-12 opacity-100 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-50"
+          class="flex flex-col justify-between items-center p-2 w-12 h-12 md:hidden"
           aria-controls="navbar-solid-bg"
           aria-expanded={isMenu() ? "true" : "false"}
           onClick={toggleButton}
         >
           <span class="sr-only">Open main menu</span>
-          <svg
-            viewBox="0 0 32 32"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              {" "}
-              <title>bars</title>{" "}
-              <path d="M2 8.749h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM30 15.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0zM30 23.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0z"></path>{" "}
-            </g>
-          </svg>
+          <div class="flex flex-col justify-between h-5 w-8">
+            <span
+              class={`block w-full h-0.5 bg-gray-800 rounded transition-opacity duration-300 ${
+                isMenu() ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              class={`block w-full h-0.5 bg-gray-800 rounded transition-opacity duration-300`}
+            ></span>
+            <span
+              class={`block w-full h-0.5 bg-gray-800 rounded transition-opacity duration-300 ${
+                isMenu() ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+          </div>
         </button>
         <div
           id="navbar-solid-bg"
