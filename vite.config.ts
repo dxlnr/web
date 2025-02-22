@@ -1,16 +1,12 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
-
-import Markdown from 'vite-plugin-md';
+import { plugin as markdownPlugin } from 'vite-plugin-markdown';
 
 export default defineConfig({
   plugins: [
     solidPlugin(),
+    markdownPlugin({
+      mode: ['raw'],
+    }),
   ],
-  server: {
-    port: 3000,
-  },
-  build: {
-    target: 'esnext',
-  },
 });

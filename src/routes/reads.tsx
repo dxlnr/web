@@ -1,46 +1,34 @@
-import { Component, onCleanup, createSignal } from "solid-js";
-import { A } from "@solidjs/router";
-
+import { Component, createSignal } from "solid-js";
 import Navbar from "../components/navbar";
 import ReadsTable from "../components/readsTable";
 
+import mdreads from "../content/reads.md?raw";
+import mdarticles from "../content/articles.md?raw";
+import mdessays from "../content/essays.md?raw";
+import mdpapers from "../content/papers.md?raw";
+
 const Reads: Component = () => {
-  // Handle markdown content
-  const [markdownContent, setMarkdownContent] = createSignal("");
-  // Handle data
-  const [bookData, setBookData] = createSignal([]);
-  const [articleData, setArticleData] = createSignal([]);
-  const [essayData, setEssayData] = createSignal([]);
-  const [paperData, setPaperData] = createSignal([]);
-  // Handle appearance
+  const [bookData, setBookData] = createSignal({ headers: [], rows: [] });
+  const [articleData, setArticleData] = createSignal({ headers: [], rows: [] });
+  const [essayData, setEssayData] = createSignal({ headers: [], rows: [] });
+  const [paperData, setPaperData] = createSignal({ headers: [], rows: [] });
+
   const [showBooksBody, setShowBooksBody] = createSignal(false);
   const [showArticleBody, setShowArticleBody] = createSignal(false);
   const [showEssayBody, setShowEssayBody] = createSignal(false);
   const [showPaperBody, setShowPaperBody] = createSignal(false);
 
-  function fetchMarkdown(url: string, setDataCallback: any) {
-    fetch(url)
-      .then((response) => response.text())
-      .then((data) => {
-        setMarkdownContent(data);
-        const lines = data.trim().split("\n");
-        const headers = lines[0].split("; ");
-        const rows = lines.slice(1).map((line) => line.split("; "));
-        setDataCallback({ headers, rows });
-      })
-      .catch((error) => {
-        console.error(
-          "There was an error fetching the markdown content:",
-          error,
-        );
-        setMarkdownContent("Failed to load content.");
-      });
+  function parseMarkdown(text: string) {
+    const lines = text.trim().split("\n");
+    const headers = lines[0].split("; ");
+    const rows = lines.slice(1).map((line) => line.split("; "));
+    return { headers, rows };
   }
 
-  fetchMarkdown("/reads.md", setBookData);
-  fetchMarkdown("/articles.md", setArticleData);
-  fetchMarkdown("/essays.md", setEssayData);
-  fetchMarkdown("/papers.md", setPaperData);
+  setBookData(parseMarkdown(mdreads));
+  setArticleData(parseMarkdown(mdarticles));
+  setEssayData(parseMarkdown(mdessays));
+  setPaperData(parseMarkdown(mdpapers));
 
   return (
     <div>

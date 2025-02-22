@@ -28,3 +28,8 @@ The Selfish Gene; R. Dawkins; Biology; https://a.co/d/2jWbOdK
 The Emotional Brain: The Mysterious Underpinnings of Emotional Life; J. LeDoux; Neuroscience; https://a.co/d/0TEVizj
 Skin in the Game: Hidden Asymmetries in Daily Life; N. Taleb; Economics, Philosophy; https://a.co/d/31Vqaga
 One Up On Wall Street: How To Use What You Already Know To Make Money In The Market; P. Lynch; Finance; https://a.co/d/1ND3l0o
+Thinking, Fast and Slow; D. Kahneman; Psychology; https://amzn.eu/d/2VoiFUX
+Chaos: Making a New Science; J. Gleick; Science; https://amzn.eu/d/iTEbL6u
+Tractatus Logico-Philosophicus; L. Wittgenstein; Philosophy; reads
+Steve Jobs; W. Isaacson; Biography; https://amzn.eu/d/b3dChz4
+The Stranger; A. Camus; Philosophy; https://amzn.eu/d/bqtezCM

@@ -13,3 +13,5 @@ SGEMM; S. Gary; CS; https://github.com/NervanaSystems/maxas/wiki/SGEMM
 Making Deep Learning Go Brrr From First Principles; H. He; CS, DL; https://horace.io/brrr_intro.html
 The Moral Equivalent of War; W. James; Social Science; https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_77/October_1910/The_Moral_Equivalent_of_War
 PyTorch internals; E. Yang; Software; http://blog.ezyang.com/2019/05/pytorch-internals
+Book Review: Seeing Like A State; Slate Star Codex; https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/
+Meditations On Moloch; Slate Star Codex; https://slatestarcodex.com/2014/07/30/meditations-on-moloch/
