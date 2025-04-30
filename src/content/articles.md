@@ -15,3 +15,4 @@ The Moral Equivalent of War; W. James; Social Science; https://en.wikisource.org
 PyTorch internals; E. Yang; Software; http://blog.ezyang.com/2019/05/pytorch-internals
 Book Review: Seeing Like A State; Slate Star Codex; https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/
 Meditations On Moloch; Slate Star Codex; https://slatestarcodex.com/2014/07/30/meditations-on-moloch/
+The Architecture of Open Source Applications (Volume 1): Berkeley DB; Seltzer, Bostic; https://aosabook.org/en/v1/bdb.html

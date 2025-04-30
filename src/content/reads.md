@@ -33,3 +33,4 @@ Chaos: Making a New Science; J. Gleick; Science; https://amzn.eu/d/iTEbL6u
 Tractatus Logico-Philosophicus; L. Wittgenstein; Philosophy; reads
 Steve Jobs; W. Isaacson; Biography; https://amzn.eu/d/b3dChz4
 The Stranger; A. Camus; Philosophy; https://amzn.eu/d/bqtezCM
+Grundlagen einer relevanten Ökonomik; H. Flassbeck; Economics; https://amzn.eu/d/0xDbGmz
