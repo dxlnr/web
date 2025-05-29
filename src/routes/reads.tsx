@@ -6,17 +6,20 @@ import mdreads from "../content/reads.md?raw";
 import mdarticles from "../content/articles.md?raw";
 import mdessays from "../content/essays.md?raw";
 import mdpapers from "../content/papers.md?raw";
+import mdmarks from "../content/marks.md?raw";
 
 const Reads: Component = () => {
   const [bookData, setBookData] = createSignal({ headers: [], rows: [] });
   const [articleData, setArticleData] = createSignal({ headers: [], rows: [] });
   const [essayData, setEssayData] = createSignal({ headers: [], rows: [] });
   const [paperData, setPaperData] = createSignal({ headers: [], rows: [] });
+  const [marksData, setMarksData] = createSignal({ headers: [], rows: [] });
 
   const [showBooksBody, setShowBooksBody] = createSignal(false);
   const [showArticleBody, setShowArticleBody] = createSignal(false);
   const [showEssayBody, setShowEssayBody] = createSignal(false);
   const [showPaperBody, setShowPaperBody] = createSignal(false);
+  const [showMarksBody, setShowMarksBody] = createSignal(false);
 
   function parseMarkdown(text: string) {
     const lines = text.trim().split("\n");
@@ -29,6 +32,7 @@ const Reads: Component = () => {
   setArticleData(parseMarkdown(mdarticles));
   setEssayData(parseMarkdown(mdessays));
   setPaperData(parseMarkdown(mdpapers));
+  setMarksData(parseMarkdown(mdmarks));
 
   return (
     <div>
@@ -61,6 +65,13 @@ const Reads: Component = () => {
           showBody={showPaperBody}
           setShowBody={setShowPaperBody}
           showPreBody={showEssayBody}
+        />
+        <ReadsTable
+          title="marks"
+          data={marksData}
+          showBody={showMarksBody}
+          setShowBody={setShowMarksBody}
+          showPreBody={showPaperBody}
         />
       </div>
     </div>
