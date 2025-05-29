@@ -34,3 +34,4 @@ Tractatus Logico-Philosophicus; L. Wittgenstein; Philosophy; reads
 Steve Jobs; W. Isaacson; Biography; https://amzn.eu/d/b3dChz4
 The Stranger; A. Camus; Philosophy; https://amzn.eu/d/bqtezCM
 Grundlagen einer relevanten Ökonomik; H. Flassbeck; Economics; https://amzn.eu/d/0xDbGmz
+Titan: The Life of John D. Rockefeller, Sr.; R. Chernow; Biography; https://amzn.eu/d/hrqvn70
